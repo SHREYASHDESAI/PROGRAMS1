@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class GPfunc{
+    public static int n_term(int a, int r, int n)
+    {
+        int tn = a *(int)(Math.pow(r,n-1));
+        return tn;
+    }
+    public static void main(String[] args) {
+
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter values of a,r,n");
+        int a = sc.nextInt();
+        int r = sc.nextInt();
+        int n = sc.nextInt();
+        System.out.println(n_term(a,r,n));
+    }
+}
