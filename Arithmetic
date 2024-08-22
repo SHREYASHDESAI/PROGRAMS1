@@ -1,0 +1,31 @@
+//to find nth term in expression tn = a + (n-1)d
+import java.util.Scanner;
+
+
+//direct approach
+public class Arithmetic{
+    public static void main() {
+
+        Scanner sc= new Scanner(System.in);
+
+        System.out.println("Enter a:");
+        int a = sc.nextInt();
+        System.out.println("You Entered a:" + a);
+
+        System.out.println("Enter d:");
+        int d = sc.nextInt();
+        System.out.println("You Entered d:" + d);
+
+        System.out.println("Enter n:");
+        int n = sc.nextInt();
+        System.out.println("You Entered n:" + n);
+
+        int tn;
+        tn = a + (n-1)*d;
+        System.out.println("nth term in the series is :" + tn);
+    }
+}
+
+
+
+
