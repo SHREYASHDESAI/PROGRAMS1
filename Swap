@@ -1,0 +1,18 @@
+public class Swap {
+    int a = 5;
+    int b = 4;
+    int c;
+
+    public static void main(String[] args) {
+        Swap swap = new Swap(); // Creating an instance of Swap
+
+        System.out.println("Value of a and b before swap are " + swap.a + " and " + swap.b);
+
+        // Swapping values
+        swap.c = swap.a;
+        swap.a = swap.b;
+        swap.b = swap.c;
+
+        System.out.println("Value of a and b after swap are " + swap.a + " and " + swap.b);
+    }
+}
