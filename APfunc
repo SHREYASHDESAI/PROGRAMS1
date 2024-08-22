@@ -1,0 +1,23 @@
+//using function
+import java.util.Scanner;
+
+public class APfunc{
+    public static int n_term(int a, int d, int n)
+    {
+        int tn = a + (n-1)*d;
+        return tn;
+    }
+    public static void main(String[] args) {
+
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter values of a,d,n");
+        int a = sc.nextInt();
+        int d = sc.nextInt();
+        int n = sc.nextInt();
+        System.out.println(n_term(a,d,n));
+    }
+}
+
+
+
+
