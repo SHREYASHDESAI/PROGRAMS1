@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Lastdigit {
+    public static void main(){
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter values of n:");
+        int n = sc.nextInt();
+        int y = Math.abs(n); //to find absolute value of number so that we dont get last
+                             // digit with negative sign
+        int ans = y % 10;
+        System.out.println(ans);
+    }
+}
